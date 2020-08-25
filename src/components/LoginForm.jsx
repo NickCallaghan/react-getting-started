@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
-const LoginForm = () => {
+const LoginForm = (props) => {
   const [user, setUser] = useState("");
   const [password, setPassword] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("You form has been submitted");
-    //We'll add the form handler later
+    props.handleLogin(user);
   };
 
   return (
