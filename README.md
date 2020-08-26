@@ -1,68 +1,76 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Getting Started
 
-## Available Scripts
+## Background
 
-In the project directory, you can run:
+The following files takes you throught the steps to followed during the #sta-coding-pals first meetup Getting started with React.
 
-### `npm start`
+If you want to skip to the finish to the finished app just clone the git repo, install the dependencies and start the dev server.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+git clone git@github.com:NickCallaghan/react-getting-started.git
+cd react-getting-started/
+npm i
+npm start
+```
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+**There different branches have been set up against this repo if you want to skip to a particular step then just switch to the branch corresponding to each step**
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Node JS](https://nodejs.org/en/) installed (12.18.3 or greater)
+- Google Chrome Browser
+- Git installed - [Homebrew](https://brew.sh/) is a good option for this on the mac
+- [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en#:~:text=React%20Developer%20Tools%20is%20a,%22%20and%20%22%E2%9A%9B%EF%B8%8F%20Profiler%22.)
+- [Visual Studio Code](https://code.visualstudio.com/) (or other code editor)
+- Some HTML/CSS/JavaScript knwoledge is recommended before beginning with react. It's possible to learn all at once but it will be a bit of a learning curve
 
-### `npm run build`
+### Useful VS Code Extensions
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [ES7 React/Redux/GraphQL/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
+- [Prettier Code Formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [Markdown All In One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+- [TabNine Autocompleter](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+- [Bracket Pair Coloriser](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+_The theme i'm using is [Cobalt 2](https://marketplace.visualstudio.com/items?itemName=wesbos.theme-cobalt2)_
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The screensharing session was done on a Mac. Most of what we do should be directly translatable to windows/linux although there may be some minor differences on windows based devices. For example
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Setting up a project from scratch
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 1 - Using create react app.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Using create react app will set you up a default starter project with a boilerplate code.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```terminal
+mkdir my-project-dir
+npx create-react-app my-project-dir
+```
 
-## Learn More
+Open up the project up in your code editor
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 2 - Installing Node Modules
 
-### Code Splitting
+If you are using a git repo which which you have cloned from the internet you will need to install any dependencies. These are listed in the `package.json` file. You can install them by running, from the root of you project:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+```
+npm i
+```
 
-### Analyzing the Bundle Size
+Today we are going to install react boot strap by running:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+```
+npm install react-bootstrap bootstrap
+```
 
-### Making a Progressive Web App
+### 3 - Staring the dev server
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+The react dev server runs a devlopment versions of your app. It has hot reloading so if you chnage the code the app will re-load. From the root of you project run:
 
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+```
+npm start
+```
