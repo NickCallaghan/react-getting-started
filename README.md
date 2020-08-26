@@ -2,7 +2,7 @@
 
 ## Background
 
-The following files takes you throught the steps to followed during the #sta-coding-pals first meetup Getting started with React.
+The following files takes you throught the steps to followed during the #sta-coding-pals first meetup: **Getting started with React**.
 
 If you want to skip to the finish to the finished app just clone the git repo, install the dependencies and start the dev server.
 
@@ -22,7 +22,7 @@ npm start
 - Git installed - [Homebrew](https://brew.sh/) is a good option for this on the mac
 - [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en#:~:text=React%20Developer%20Tools%20is%20a,%22%20and%20%22%E2%9A%9B%EF%B8%8F%20Profiler%22.)
 - [Visual Studio Code](https://code.visualstudio.com/) (or other code editor)
-- Some HTML/CSS/JavaScript knwoledge is recommended before beginning with react. It's possible to learn all at once but it will be a bit of a learning curve
+- Some HTML/CSS/JavaScript knwoledge is recommended before beginning with react. It's possible to learn all at once but it will be a bit of a learning curve. If you know JS already it's also usefull to know ES6 features like arrow functions, destructuring, spread operator & template literals.
 
 ### Useful VS Code Extensions
 
@@ -74,3 +74,18 @@ The react dev server runs a devlopment versions of your app. It has hot reloadin
 ```
 npm start
 ```
+
+### 4 - Creating a simple app.
+
+For this session were going to create a **simplified login form** and talk about some key react concepts as we go.
+1. Running create react app
+2. Install-React-Bootstrap
+3. A-Simple-Counter
+4. Createing-login-component
+5. Passing-props-to-set-user
+6. Rendering-components-conditionally
+
+
+
+
+
