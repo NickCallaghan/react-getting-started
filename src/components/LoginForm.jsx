@@ -17,6 +17,7 @@ const LoginForm = () => {
       <Form.Group controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
         <Form.Control
+          value={user}
           type="email"
           placeholder="Enter email"
           onChange={(e) => setUser(e.target.value)}
@@ -29,6 +30,7 @@ const LoginForm = () => {
       <Form.Group controlId="formBasicPassword">
         <Form.Label>Password</Form.Label>
         <Form.Control
+          value={password}
           type="password"
           placeholder="Password"
           onChange={(e) => setPassword(e.target.value)}
